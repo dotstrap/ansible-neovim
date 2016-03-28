@@ -1,0 +1,9 @@
+---
+default_xdg_config_home: "{{ ansible_user_dir }}/.config"
+default_xdg_data_home: "{{ ansible_user_dir }}/.local/share"
+default_xdg_cache_home: "{{ ansible_user_dir }}/.cache"
+
+neovim_repo_url: ""
+neovim_repo_files:
+  - name: ""
+neovim_config_block: |
