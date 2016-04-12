@@ -21,10 +21,10 @@
 
     - name: package | neovim
       package: name={{ neovim_name }} state={{ neovim_install_state }}
-  rescue:
+  # rescue:
     # we don't have permission to use the system package manager
-    - name: setup | user install
-      include: user_install.yml
+    # - name: setup | user install
+      # include: user_install.yml
   tags:
     - bootstrap
     - install

@@ -1,6 +1,6 @@
 ansible-neovim
 =========
-[![Build Status](https://travis-ci.org/mwilliammyers/ansible-neovim.svg?branch=master)](https://travis-ci.org/mwilliammyers/ansible-neovim)
+[![Build Status](https://travis-ci.org/dotstrap/ansible-neovim.svg?branch=master)](https://travis-ci.org/dotstrap/ansible-neovim)
 
 > Install & configure neovim.
 
@@ -25,7 +25,7 @@ Example Playbook
 ```
     - hosts: servers
       roles:
-         - { role: mwilliammyers.neovim }
+         - { role: dotstrap.neovim }
 ```
 
 Notes
