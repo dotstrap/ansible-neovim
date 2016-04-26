@@ -1,15 +1,19 @@
 ---
 language: python
 python: "2.7"
-sudo: false
+sudo: true
 
 addons:
   apt:
     packages:
-    - python-pip
-
-install:
-  - pip install git+https://github.com/ansible/ansible.git
+    - ansible
+    
+# before_install:
+#   - sudo apt-get install software-properties-common -y
+#   - sudo add-apt-repository ppa:ansible/ansible -y
+#   - sudo apt-get update -q
+  
+before_script:
   - ansible --version
   - printf '[defaults]\nroles_path=../' >ansible.cfg
 
