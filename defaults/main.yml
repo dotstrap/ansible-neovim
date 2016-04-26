@@ -9,13 +9,6 @@ neovim_name: neovim
 # choices: [ present, absent, latest ]
 neovim_install_state: present
 
-# The release tarball URL & installation directory used in the event that the
-# ansible package module does not succeed (ie. we don't have permission)
-neovim_release:
-  url: 'https://github.com/neovim/neovim/releases/download/nightly/neovim-linux64.tar.gz'
-  # Note: this is the directory that is created after unarchiving url
-  install_dir: "{{ xdg_data_home }}/neovim-linux64"
-
 # The base directory relative to which all neovim config files should be stored
 # Note: this is neovim's default and probably should not be changed
 neovim_config_dir: "{{ xdg_config_home }}/nvim"

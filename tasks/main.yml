@@ -65,7 +65,7 @@
         force: yes
 
     - name: install | plugins
-      command: "{{ neovim_release.install_dir }}/bin/nvim '+silent! +PlugUpdate!' +qall!"
+      command: "nvim '+silent! +PlugUpdate!' +qall!"
   tags:
     - bootstrap
     - configure
