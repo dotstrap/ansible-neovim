@@ -1,17 +1,12 @@
 ---
 language: python
 python: "2.7"
-sudo: true
+sudo: false
 
 addons:
   apt:
     packages:
-    - ansible
-    
-# before_install:
-#   - sudo apt-get install software-properties-common -y
-#   - sudo add-apt-repository ppa:ansible/ansible -y
-#   - sudo apt-get update -q
+      - ansible
   
 before_script:
   - ansible --version
