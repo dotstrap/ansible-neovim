@@ -18,14 +18,6 @@ neovim_config_repo:
   url: https://github.com/mwilliammyers/speedcola.git
   version: develop # see: http://docs.ansible.com/ansible/git_module.html
 
-# The state in which settings are written
-# choices: [ present, absent ]
-neovim_config_state: present
-
-# The marker line which surrounds neovim_config_block
-# "{mark}" will be replaced with "BEGIN" or "END".
-neovim_marker: "#####=== {mark} Ansible managed neovim settings ===#####"
-
 # Executable name for python2 pip
 # default:
 #   - Archlinux: pip2
@@ -37,30 +29,6 @@ pip2_name: "{{ default_pip2_name }}"
 #   - Archlinux: pip
 #   - all others: pip3
 pip3_name: "{{ default_pip3_name }}"
-
-
-#####=== shell configuration ===#####
-
-# Shell startup file where settings are written to.
-# default:
-#   - bash: ~/.bash_profile
-#   - zsh: ~/.zshrc
-#   - fish: ~/.config/fish/config.fish
-shell_config_file: "{{ default_shell_config_file }}"
-
-# Override this instead of shell_config_file if you use that elsewhere
-neovim_shell_config_file: "{{ shell_config_file }}"
-
-# The base directory relative to which shell specific data files should be stored
-# default:
-#   - bash: $xdg_data_home/bash/
-#   - zsh: $xdg_data_home/zsh/
-#   - fish: ~/.config/fish/
-shell_data_dir: "{{ default_shell_data_dir }}"
-
-# Override this instead of shell_data_dir if you use that elsewhere
-neovim_shell_data_dir: "{{ shell_data_dir }}"
-
 
 #####=== XDG ===#####
 # http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html

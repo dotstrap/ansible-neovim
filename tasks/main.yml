@@ -27,8 +27,11 @@
       # include: user_install.yml
   tags:
     - bootstrap
+    - bootstrap_neovim
     - install
+    - install_neovim
     - update
+    - update_neovim
 
 - block:
    - name: pip2 | neovim
@@ -39,8 +42,11 @@
   ignore_errors: yes # these packages are not very essential and they are error prone
   tags:
     - bootstrap
+    - bootstrap_neovim
     - install
+    - install_neovim
     - update
+    - update_neovim
 
 #####=== configure ===#####
 
@@ -51,8 +57,11 @@
     version: "{{ neovim_config_repo.version }}"
   tags:
     - bootstrap
+    - bootstrap_neovim
     - configure
+    - configure_neovim
     - update
+    - update_neovim
 
 - block: 
     - name: setup | vim-plug directory
@@ -68,7 +77,11 @@
       command: "nvim '+silent! +PlugUpdate!' +qall!"
   tags:
     - bootstrap
+    - bootstrap_neovim
     - configure
+    - configure_neovim
     - plugin
+    - plugin_neovim
     - update
+    - update_neovim
 
