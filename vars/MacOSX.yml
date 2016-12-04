@@ -1,1 +1,3 @@
 default_neovim_name: neovim/neovim/neovim
+default_pip2_name: pip
+default_pip3_name: pip3
