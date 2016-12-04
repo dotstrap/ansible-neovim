@@ -16,7 +16,7 @@ neovim_config_dir: "{{ xdg_config_home }}/nvim"
 # Optional repo containing config files that will be cloned to neovim_config_dir
 neovim_config_repo: 
   url: https://github.com/mwilliammyers/speedcola.git
-  version: develop # see: http://docs.ansible.com/ansible/git_module.html
+  version: master # see: http://docs.ansible.com/ansible/git_module.html
 
 # Executable name for python2 pip
 # default:
