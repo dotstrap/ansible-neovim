@@ -3,7 +3,7 @@
 #####=== neovim configuration ===#####
 
 # The specific package name used to install neovim
-neovim_name: neovim
+neovim_name: "{{ default_neovim_name }}"
 
 # The state in which neovim is installed
 # choices: [ present, absent, latest ]
