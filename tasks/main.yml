@@ -7,8 +7,8 @@
         - "{{ ansible_os_family }}.yml"
         - default.yml
 
-    - name: setup
-      include_vars: "{{ ansible_user_shell | basename }}.yml"
+    # - name: setup
+      # include_vars: "{{ ansible_user_shell | basename }}.yml"
   tags: always
 
 #####=== install ===#####
